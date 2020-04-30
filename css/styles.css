@@ -1,7 +1,12 @@
 
 html{
-    font-size:62.5%; /*Reset para REMS - 62.5 % = 10px de 16pc*/
+    /*Reset para REMS - 62.5 % = 10px de 16pc*/
     /*1 rem = 10px*/
+    font-size:62.5%; 
+    box-sizing: border-box;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
 }
 body{
     font-family: 'Lato', sans-serif;
@@ -9,10 +14,10 @@ body{
     line-height: 2;
 }
 /*Global*/
-.contenedor{
-    max-width: 120rem;
-    margin: 0 auto;
+img{
+    max-width:100%;
 }
+
 h1{
     font-size: 3.8rem;
 }
@@ -25,6 +30,11 @@ h3{
 h4{
     font-size:2.6rem;
 }
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
 /*Utilidades*/
 .seccion{
     margin-top: 2rem;
@@ -35,6 +45,26 @@ h4{
 }
 .centrar-texto{
     text-align: center;
+}
+.d-block{
+    display: block!important;
+}
+/*Botones*/
+.boton{
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+}
+.boton-amarillo{
+    background-color: #E08709;
+}
+.boton-verde{
+    background-color: #71b100;
 }
 /*Header*/
 .site-header.inicio{
@@ -89,4 +119,29 @@ h4{
 }
 .icono h3{
     text-transform: uppercase;
+}
+/*Anuncios*/
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+}
+.anuncio{
+    flex-basis: calc(33.3% - 1rem);
+    border: 1px solid #b5b5b5;
+    background-color: #f5f5f5;
+}
+.contenido-anuncio{
+    padding: 2rem;
+}
+.contenido-anuncio h3, 
+.contenido-anuncio p{
+    margin: 0;
+}
+.precio{
+    font-weight: 700;
+    color:#71b100;
+}
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
 }
