@@ -100,6 +100,7 @@ h4{
     text-decoration: none;
     font-size: 1.8rem;
     margin-right: 2rem;
+    font-weight: 700;
 }
 .navegacion a:hover{
     color:#71b100;
@@ -244,4 +245,19 @@ h4{
     position:relative;
     padding-left: 5rem;
     font-weight: 300;
+}
+
+/***FOOTER***/
+.site-footer{
+    background-color: #333333;
+    margin: 0;
+}
+.copyright{
+    margin: 0;
+    color: #ffffff;
+}
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
 }
