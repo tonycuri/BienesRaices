@@ -36,6 +36,7 @@
         <form action="">
             <fieldset>
                 <legend>Informacion Personal</legend>
+
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" placeholder="Tu Nombre">
     
@@ -50,17 +51,38 @@
             </fieldset>
             <fieldset>
                 <legend>Informacion sobre Propiedad</legend>
+
                 <label for="opciones">Vende o Compra</label>
                 <select id="opciones">
                     <option value="" disabled selected>--Seleccione--</option>
                     <option value="">Compra</option>
                     <option value="">Vende</option>
                 </select>
+
                 <label for="cantindad">Cantidad:</label>
                 <input type="number" min="0">
             </fieldset>
+            <fieldset>
+                <legend>Contacto</legend>
 
-            <input type="submit">
+                <p>Como desea ser Contactado:</p>
+
+                <label for="telefono">Teléfono</label>
+                <input type="radio" name="contacto" value="telefono" id="telefono">
+
+                <label for="correo">E-mail</label>
+                <input type="radio" name="contacto" value="correo" id="correo">
+
+                <p>Si elegió Teléfono, elija la fecha y la hora</p>
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="09:00" max="18:00">
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="boton boton-verde">
         </form>
     </main>
 
