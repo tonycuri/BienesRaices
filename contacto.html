@@ -34,8 +34,26 @@
         <h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h2>
 
         <form action="">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" placeholder="Tu Nombre">
+            <fieldset>
+                <legend>Informacion Personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu Nombre">
+    
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Tu Correo electronico" required>
+    
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" placeholder="Tu telefono" required>
+    
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Informacion sobre Propiedad</legend>
+
+            </fieldset>
+
+            <input type="submit">
         </form>
     </main>
 
