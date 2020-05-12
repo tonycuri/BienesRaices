@@ -167,7 +167,7 @@ h4 {
 }
 
 @media (min-width: 768px) {
-    .navegacion {
+    .navegacion a {
         display: inline-block;
         margin-right: 2rem;
         font-size: 1.8rem;
