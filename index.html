@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header class="site-header inicio">
         <div class="contenedor contenido-header">
@@ -15,16 +17,23 @@
                 <a href="/">
                     <img src="img/logo.svg" alt="Logotipo de Bienes Raices">
                 </a>
-                <nav class="navegacion">
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="Icono mobile-menu">
+                    </a>
+                </div>
+                <nav class="navegacion" id="navegacion">
                     <a href="nosotros.html">Nosotros</a>
                     <a href="anuncios.html">Anuncios</a>
                     <a href="blog.html">Blog</a>
                     <a href="contacto.html">Contacto</a>
                 </nav>
-            </div><!--barra-->
-        
+            </div>
+            <!--barra-->
+
             <h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
-        </div><!--contenedor-->
+        </div>
+        <!--contenedor-->
     </header>
 
     <section class="contenedor">
@@ -36,15 +45,15 @@
                 <h3 class="encabezado">Seguridad</h3>
                 <p>Quae quam alias omnis vitae eveniet asperiores eligendi nobis eum quo odit quis, vel necessitatibus nulla illum id sit cupiditate! Non, dolores?</p>
             </div>
-        
+
             <div class="icono">
-                <img src="img/icono2.svg" alt="icono mejor precio">    
+                <img src="img/icono2.svg" alt="icono mejor precio">
                 <h3 class="encabezado">El Mejor Precio</h3>
                 <p>Dolor quaerat quasi, harum libero quidem esse accusantium dicta numquam vitae animi veritatis et laborum, voluptatibus molestias officiis illum nulla, sunt vel!</p>
             </div>
-        
+
             <div class="icono">
-                <img src="img/icono3.svg" alt="icono a tiempo">    
+                <img src="img/icono3.svg" alt="icono a tiempo">
                 <h3 class="encabezado">A Tiempo</h3>
                 <p>Praesentium voluptatem eum iusto veniam suscipit repellat dolorum inventore quod. Excepturi blanditiis vero culpa quam cupiditate.</p>
             </div>
@@ -52,7 +61,7 @@
     </section>
 
     <main class="seccion contenedor">
-    	<h2 class="fw-300 centrar-texto">Casas y Depas en Venta</h2>
+        <h2 class="fw-300 centrar-texto">Casas y Depas en Venta</h2>
         <div class="contenedor-anuncios">
             <div class="anuncio">
                 <img src="img/anuncio1.jpg" alt="Anuncio casa en el lago">
@@ -77,7 +86,7 @@
                     <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
                 </div>
             </div>
-        
+
             <div class="anuncio">
                 <img src="img/anuncio2.jpg" alt="Anuncio casa de lujo">
                 <div class="contenido-anuncio">
@@ -101,7 +110,7 @@
                     <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
                 </div>
             </div>
-        
+
             <div class="anuncio">
                 <img src="img/anuncio3.jpg" alt="Anuncio casa con alberca">
                 <div class="contenido-anuncio">
@@ -126,8 +135,8 @@
                 </div>
             </div>
         </div>
-        
-    	<div class="ver-todas">
+
+        <div class="ver-todas">
             <a href="anuncios.html" class="boton boton-verde">Ver Todas</a>
         </div>
     </main>
@@ -143,30 +152,34 @@
     <div class="seccion-inferior contenedor seccion">
         <section class="blog">
             <h3 class="centrar-texto fw-300">Nuestro Blog</h3>
-        
+
             <article class="entrada-blog">
                 <div class="imagen">
                     <img src="img/blog1.jpg" alt="Imagen del blog">
                 </div>
                 <div class="texto-entrada">
-                    <a href="#"><h4>Terraza en el techo de tu casa</h4></a>
+                    <a href="#">
+                        <h4>Terraza en el techo de tu casa</h4>
+                    </a>
                     <p>Escrito el: <span>20/10/2019</span> por: <span>Admin</span></p>
                     <p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero. </p>
                 </div>
             </article>
-            
+
             <article class="entrada-blog">
                 <div class="imagen">
                     <img src="img/blog2.jpg" alt="Imagen del blog">
                 </div>
                 <div class="texto-entrada">
-                    <a href="#"><h4>Guía para la decoracion de tu Hogar</h4></a>
+                    <a href="#">
+                        <h4>Guía para la decoracion de tu Hogar</h4>
+                    </a>
                     <p>Escrito el: <span>20/10/2019</span> por: <span>Admin</span></p>
                     <p>Maximiza el espacio en tu hogar con esta guía, aprende a combinar muebles y colores para darle vida a tu espacio.</p>
                 </div>
             </article>
         </section>
-    
+
         <section class="testimoniales">
             <h3 class="centrar-texto  fw-300">Testimoniales</h3>
             <div class="testimonial">
@@ -180,14 +193,15 @@
 
     <footer class="site-footer seccion">
         <div class="contenedor contenedor-footer">
-        	<nav class="navegacion">
-        	    <a href="nosotros.html">Nosotros</a>
-        	    <a href="anuncios.html">Anuncios</a>
-        	    <a href="blog.html">Blog</a>
-        	    <a href="contacto.html">Contacto</a>
-        	</nav>
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
             <p class="copyright">Todos los Derechos Reservados 2020 &copy;</p>
-        </div>  
+        </div>
     </footer>
 </body>
+
 </html>
